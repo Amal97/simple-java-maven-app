@@ -12,11 +12,7 @@ node{
       bat "C:\\Maven3.6.3\\bin\\mvn package"
    }
    
- stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
+
    
    stage('Deploy to Tomcat'){
      bat "copy target\\JenkinsWar.war \"${tomcatWeb}\\JenkinsWar.war\""
