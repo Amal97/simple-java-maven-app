@@ -12,6 +12,9 @@ node{
       bat "C:\\Maven3.6.3\\bin\\mvn package"
    }
    
+    stage('Test') {
+       bat "C:\\Maven3.6.3\\bin\\mvn test"
+    }
 
    
    stage('Deploy to Tomcat'){
